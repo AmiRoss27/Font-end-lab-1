@@ -1,8 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
 body {
   background-color: #f9fafc;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  width: 481px;
+  font-family: "Open Sans", sans-serif;
+  max-width: 481px;
 }
 
 /*Nav bar styling*/
@@ -37,6 +38,10 @@ a:hover {
   font-weight: 500;
   font-size: 16px;
   margin-left: 5px;
+}
+
+a:focus {
+  outline: none;
 }
 
 /*Both button styling*/
