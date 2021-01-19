@@ -24,11 +24,19 @@ a:link {
 a:visited {
   color: #69696a;
   text-decoration: none;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 5px;
 }
 
 a:hover {
   color: #69696a;
   text-decoration: none;
+  padding: 5px;
+  font-weight: 500;
+  font-size: 16px;
+  margin-left: 5px;
 }
 
 /*Both button styling*/
@@ -60,7 +68,7 @@ button {
 h2 {
   font-size: 20px;
   font-weight: 600;
-  margin: 5px 0 0 5px;
+  margin: 5px 0 0 8px;
   padding: 3px 0;
 }
 
@@ -69,4 +77,10 @@ h1 {
   font-weight: 500;
   padding: 5px 0 0 0;
   margin-left: 5px;
+}
+
+p {
+  color: #69696a;
+  font-size: 16px;
+  font-weight: 500;
 }
