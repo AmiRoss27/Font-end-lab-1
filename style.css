@@ -3,7 +3,7 @@
 body {
   background-color: #f9fafc;
   font-family: "Open Sans", sans-serif;
-  max-width: 481px;
+  max-width: 100%;
 }
 
 /*Nav bar styling*/
@@ -11,6 +11,17 @@ body {
 nav {
   display: flex;
   flex-direction: column;
+}
+
+ul {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+  padding: 10px;
 }
 
 a:link {
@@ -46,12 +57,24 @@ a:focus {
 
 /*Both button styling*/
 
-button {
+.topbutton {
   background-color: #000;
   color: #f9fafc;
   border: none;
   border-radius: 25px;
   display: inline-block;
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 0 8px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.bottombutton {
+  background-color: #000;
+  color: #f9fafc;
+  border: none;
+  border-radius: 25px;
   width: 100%;
   padding: 15px;
   margin: 5px 0 0 8px;
@@ -88,4 +111,74 @@ p {
   color: #69696a;
   font-size: 16px;
   font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  ul {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 20px;
+    list-style-type: none;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-top: 100px;
+  }
+
+  p {
+    max-width: 50%;
+  }
+
+  .bottombutton {
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    margin: 328px 0 0 0;
+  }
+
+  .largeCircle {
+    background-color: rgba(247, 136, 167, 0.6);
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    position: absolute;
+    top: 200px;
+    right: 175px;
+  }
+
+  .mediumCircle {
+    background-color: rgba(247, 193, 162, 0.7);
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    position: absolute;
+    top: 390px;
+    right: 78px;
+  }
+
+  .smallCircle {
+    background-color: rgba(207, 130, 213, 0.6);
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 275px;
+    right: 40px;
+  }
 }
