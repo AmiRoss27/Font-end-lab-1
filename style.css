@@ -1,3 +1,5 @@
+/* Importing font Open Sans*/
+
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 
 body {
@@ -113,6 +115,8 @@ p {
   font-weight: 500;
 }
 
+/* Desktop Styling Media Query */
+
 @media screen and (min-width: 768px) {
   header {
     display: flex;
@@ -146,10 +150,9 @@ p {
 
   .bottombutton {
     max-width: 200px;
-    display: flex;
-    justify-content: center;
     align-self: center;
-    margin: 328px 0 0 0;
+    position: absolute;
+    bottom: 0;
   }
 
   .largeCircle {
